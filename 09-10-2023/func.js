@@ -1,10 +1,5 @@
-function calc(x){
-    let newArr =[]
-    for(let i =0;i<x.length;i++){
-      newArr[i] = x.charCodeAt(i)
-    }
-    let total1 = newArr.join("").split("").map(a=>parseInt(a)).reduce((a,b)=>a+b)
-    let total2 = newArr.join("").replaceAll("7","1").split("").map(a=>parseInt(a))
-                .reduce((a,b)=>a+b)
-    return total1 - total2
-  }
+function calculate(num1, operation, num2) {
+  //TODO: make a basic calculator. 
+   return operation == "+" ? num1 + num2 : operation == "-" ? num1 - num2 :
+          operation == "/"  && num2 != 0 ? num1 / num2 : operation == "*" ? num1 * num2 : null
+ }
