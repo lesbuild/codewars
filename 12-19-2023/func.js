@@ -12,4 +12,4 @@ function nine(fn) {return fn ? fn(9) : 9}
 function plus(n) {return function(v) {return v + n}}
 function minus(n) {return function(v) {return v - n}}
 function times(n) {return function(v) {return v * n}}
-function dividedBy(n) {return function(v) {return Math.floor(v / n)}}
+function dividedBy(n) {return function(v) {return Math.floor(v / n)}}1
