@@ -1,5 +1,9 @@
-function mean(lst){
-    let num = lst.filter(a=>a.search(/[a-z]/g)).reduce((a,b)=>parseInt(a)+parseInt(b)) / 10
-    let alpha = lst.join("").replace(/[0-9]/gi,"")
-    return [num,alpha]
-  }
+function sameCase(a, b){
+    if(a.toUpperCase() === a.toLowerCase() || b.toLowerCase() === b.toUpperCase()){
+       return -1
+     }else if(a === a.toLowerCase() && b === b.toLowerCase() || a === a.toUpperCase() && b === b.toUpperCase()){
+         return 1
+     }else{
+       return 0
+     }
+   }
