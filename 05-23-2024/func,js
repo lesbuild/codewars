@@ -1,0 +1,4 @@
+function duplicates(arr) {
+    const duplicates = arr.filter((item, index) =>arr.indexOf(item) !== index);
+      return Array.from(new Set(duplicates));
+  }
