@@ -1,0 +1,8 @@
+function makeValley(arr) {
+    var leftWing = []
+    var rightWing = []
+    arr.sort((a, b) => b - a)
+      .forEach((e, i) => i % 2 == 0 ? leftWing.push(e) : rightWing.unshift(e))
+    
+    return [...leftWing, ...rightWing]
+}
