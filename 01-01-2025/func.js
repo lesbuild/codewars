@@ -3,5 +3,5 @@ function sumOfWholeOrLast(arr){
     for(let i = 0;i<arr.length-1;i++){
         total += arr[i] 
     }
-    return total > arr[arr.length-1] ? "Power of Many wins!" : "End number is the Boss!"
+    return total > arr[arr.length-1] ? "Power of Many wins!" : total < arr[arr.length-1] ? "End number is the Boss!" : "It's an even match!"
 }
