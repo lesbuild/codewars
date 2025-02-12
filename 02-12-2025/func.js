@@ -1,15 +1,16 @@
-function enrcyptMe(str){
+function encryptMe(str){
     let en = ""
     let alpha = "abcdefghijklmnopqrstuvwxyz"
     for(let i = 0;i<str.length;i++){
         let ind = alpha.indexOf(str[i]) + 7
         if(ind > 25){
-            en += str[ind - 25]
+            en += alpha[ind - 25]
         }
         else{
-            en += str[ind]
+            en += alpha[ind]
         }
     }
+    return en
 }
 
 function decryptMe(str){
@@ -18,10 +19,11 @@ function decryptMe(str){
     for(let i = 0;i<str.length;i++){
         let ind = alpha.indexOf(str[i]) - 7
         if(ind < 0){
-            de += str[ind + 25]
+            de += alpha[ind + 25]
         }
         else{
-            de += str[ind]
+            de += alpha[ind]
         }
     }
+    return de
 }
