@@ -21,3 +21,12 @@ function determineTime (durations) {
     }
     return hr == 24 && min + sec > 0 ? false : true
   }
+
+  function determineTime (durations) {
+    let sec = 0
+    for(let i = 0;i<durations.length;i++){
+      let time = durations[i].split(":")
+      sec += +(time[0] * 3600) + +(time[1] * 60) + +time[2]
+    }
+    return sec <= 86400
+  }
