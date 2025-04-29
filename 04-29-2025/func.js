@@ -6,3 +6,7 @@ function duplicateElements(m, n) {
     }
   return false
 }
+
+function duplicateElements(m, n) {
+    return m.some(e=>n.includes(e))
+}
