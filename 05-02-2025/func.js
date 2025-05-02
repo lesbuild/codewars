@@ -7,3 +7,6 @@ function arr2bin(arr){
     }
     return total.toString(2)
   }
+  function arr2bin(arr){
+    return arr.filter(a=>typeof a==="number").reduce((a,b)=>a+b,0).toString(2)
+  }
