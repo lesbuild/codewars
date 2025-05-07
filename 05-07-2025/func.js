@@ -4,7 +4,7 @@ function arrAdder(arr) {
       for(var j = 0; j < arr.length; j++){
         sentence+=arr[j][i]
       }
-      sentence+=" "
+      sentence += " "
     }
     return sentence.trim()
   }
