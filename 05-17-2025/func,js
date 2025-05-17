@@ -1,0 +1,7 @@
+function toCurrency(price){
+  price = price.toString().split("").reverse()
+  for(let i = 3;i <price.length;i+=4){
+    price.splice(i,0,",")
+  }
+  return price.reverse().join("")
+}
