@@ -4,3 +4,4 @@ function wayOfMajority(str){
     let right = arr.filter(b=>b==">").length
     return left > right ? "We are going left!" : right > left ? "We are going right!" : "Let's stay here and decide again!"
 }
+// find out majority of the arrows are going
