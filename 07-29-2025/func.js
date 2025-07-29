@@ -1,6 +1,6 @@
-function guessTheTarget(str,guess){
+unction guessTheTarget(str,guess){
     let msg = ""
-    if(str[guess]== /[o]/g){
+    if(str[guess] ==  "o"){
         str = str.replace(str[guess],"_")
         msg = "hit"
     }
