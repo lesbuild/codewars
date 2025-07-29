@@ -1,4 +1,4 @@
-unction guessTheTarget(str,guess){
+function guessTheTarget(str,guess){
     let msg = ""
     if(str[guess] ==  "o"){
         str = str.replace(str[guess],"_")
