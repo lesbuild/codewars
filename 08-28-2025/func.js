@@ -1,0 +1,3 @@
+function partial(str){
+    return
+}
