@@ -1,7 +1,7 @@
 function negationValue(string, value) {
   return string.length % 2 ? !value : !!value
 }
-Description:
+// Description:
 // In programming you know the use of the logical negation operator (!), it reverses the meaning of a condition.
 
 // !false = true
