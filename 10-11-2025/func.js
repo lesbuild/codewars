@@ -1,6 +1,6 @@
 function reverseVowels(str) {
   let vowels = str.match(/[aoeiu]/gi);
-  return vowels == "" ? str : str.replace(/[aeoiu]/gi, e=>vowels.pop())
+  return vowels == "" ? str : str.replace(/[aeoiu]/gi, e=>vowels.pop());
 }
 // Description:
 // In this kata, your goal is to write a function which will reverse the vowels in a string. Any characters which are not vowels should remain in their original position. Here are some examples:
