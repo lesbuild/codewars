@@ -1,7 +1,7 @@
 function oppositeAttract(arr) {
     return arr.map((e,i)=>e+(arr.length-1-i)) 
 }
-Description:
+// Description:
 
 // Add an element opposite of their index
 
