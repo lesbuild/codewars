@@ -22,3 +22,10 @@ function binaryPyramid(m,n){
 // + 100  // 4 in binary is 100
 // -----
 //   122  // 122 in binary is 1111010
+function binaryPyramid(m,n){
+  let combine = 0
+  for(let i = m;i<=n;i++){
+    combine += (Number(i.toString(2)))
+  }
+  return combine.toString(2)
+}
