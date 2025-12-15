@@ -11,3 +11,12 @@ function insideOut(x){
 // An example should clarify:
 
 // 'taxi' would become 'atix' 'taxis' would become 'atxsi'
+
+function insideOut(x){
+  return x.split(' ').map(e => {    
+    let left = e.substring(0, Math.floor(e.length / 2)).split('').reverse().join('')
+    let right = e.substring(Math.ceil(e.length / 2)).split('').reverse().join('')
+    let middle = e[Math.floor(e.length / 2)]    
+    return e.length % 2 ? left + middle + right : left + right
+  }).join(' ')
+}
