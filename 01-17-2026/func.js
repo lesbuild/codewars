@@ -26,3 +26,7 @@ function gridIndex(grid, indices) {
 
 // "meal"
 // All inputs will be valid.
+function gridIndex(grid, indices) {
+  grid = grid.flat()
+  return indices.map(a=>grid[a-1]).join("")
+}
