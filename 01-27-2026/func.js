@@ -6,21 +6,21 @@ function addUsername(list) {
   }
   return list
 }
-Description:
-Given the following input array:
+// Description:
+// Given the following input array:
 
-var list1 = [
-  { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby' },
-  { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure' }
-];
-write a function that adds the username property to each object in the input array:
+// var list1 = [
+//   { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby' },
+//   { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure' }
+// ];
+// write a function that adds the username property to each object in the input array:
 
-[
-  { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby', 
-    username: 'emilyn1990' },
-  { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure', 
-    username: 'nore2000' }
-]
+// [
+//   { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby', 
+//     username: 'emilyn1990' },
+//   { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure', 
+//     username: 'nore2000' }
+// ]
 // The value of the username property is composed by concatenating:
 
 // firstName in lower-case;
