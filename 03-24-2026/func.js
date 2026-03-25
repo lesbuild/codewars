@@ -5,6 +5,6 @@ function evenOrOdd(arr){
             `Even total ${even} is larger than odd ${odd}` : `Both number are equal ${even}`
 }
 
-Description:
+// Description:
 
-Total the array whether odd is greater or even or same total.
+// Total the array whether odd is greater or even or same total.
