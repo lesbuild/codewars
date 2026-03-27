@@ -13,3 +13,5 @@ function heggeleggleggo(word){
 // eggs => egegggeggsegg
 
 // FUN KATA => FeggUNegg KeggATeggA
+
+let heggeleggleggo = word => word.replace(/([^aeiou ])/gi, "$1egg"); // Another solution
